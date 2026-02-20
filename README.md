@@ -1,43 +1,81 @@
-# Astro Starter Kit: Minimal
+# Data Engineering Indonesia Website
 
-```sh
-npm create astro@latest -- --template minimal
+Community website for Data Engineering Indonesia (DEI) - showcasing events, articles, and connecting data professionals in Indonesia.
+
+## Tech Stack
+
+| Tool         | Version    | Purpose                   |
+| ------------ | ---------- | ------------------------- |
+| Astro        | 5.17.1     | Static Site Generation    |
+| TypeScript   | Latest     | Type safety               |
+| Tailwind CSS | 4.1.18     | Styling                   |
+| Bun          | 1.3+       | Runtime & Package Manager |
+| Supabase     | PostgreSQL | Database (pending)        |
+
+## Prerequisites
+
+- [Bun](https://bun.sh/) 1.3+ installed
+- Node.js not required (Bun includes its own runtime)
+
+## Quick Start
+
+```bash
+# Install dependencies
+bun install
+
+# Start development server
+bun run dev
+
+# Build for production
+bun run build
+
+# Preview production build
+bun run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Commands
 
-## 🚀 Project Structure
+All commands use Bun (not npm):
 
-Inside of your Astro project, you'll see the following folders and files:
+| Command               | Action                             |
+| --------------------- | ---------------------------------- |
+| `bun install`         | Install dependencies               |
+| `bun run dev`         | Start dev server at localhost:4321 |
+| `bun run build`       | Build production site to ./dist/   |
+| `bun run preview`     | Preview build locally              |
+| `bun test`            | Run tests                          |
+| `bun test --watch`    | Run tests in watch mode            |
+| `bun test --coverage` | Run tests with coverage            |
+| `bun run lint`        | Run ESLint                         |
+| `bun run format`      | Format code with Prettier          |
 
-```text
-/
-├── public/
+## Project Structure
+
+```
+dei-website/
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/       # UI components (Header, Footer, etc.)
+│   ├── layouts/         # Page layouts
+│   ├── lib/             # Utilities (medium.ts, supabase.ts)
+│   ├── pages/           # Routes (index, about, contact, events, articles)
+│   ├── styles/          # Global CSS
+│   └── types/           # TypeScript definitions
+├── public/              # Static assets
+├── tests/              # Test files
+└── dist/               # Build output (generated)
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Pages
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- `/` - Homepage with hero, events, articles
+- `/about` - About DEI, mission, team
+- `/events` - Upcoming events listing
+- `/articles` - Medium RSS articles
+- `/contact` - Contact information
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Development Guidelines
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Always use Bun (never npm)
+- Run `bun run build` before committing
+- Follow Conventional Commits: `feat:`, `fix:`, `docs:`, etc.
+- Ensure white text on dark blue (#1e3a5f) backgrounds
