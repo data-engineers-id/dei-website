@@ -1,0 +1,83 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-[#1e3a5f] text-white mt-20">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Brand Section with margin -->
+    <!-- <div class="mb-16">
+      <div class="flex items-center space-x-2 mb-4">
+        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center mt-10">
+          <span class="text-[#1e3a5f] font-bold text-sm">DEI</span>
+        </div>
+        <span class="font-bold text-lg text-white mt-10">Data Engineering Indonesia</span>
+      </div>
+    </div> -->
+
+    <!-- Grid Content -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Brand Description -->
+      <div class="mt-2">
+        <img src="/images/logo.png" alt="Data Engineering Indonesia" class="h-12 w-auto mb-4" />
+        <p class="!text-white text-sm mt-4 mb-4" style="color: white !important;">
+          Empowering Indonesia's data engineering community through knowledge sharing, events, and collaboration since 2019.
+        </p>
+        <div class="flex space-x-4">
+          <a href="https://www.linkedin.com/company/74711316/" target="_blank" rel="noopener noreferrer" class="!text-white hover:!text-gray-200 transition-colors" style="color: white !important;">
+            <span class="sr-only">LinkedIn</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="https://medium.com/data-engineering-indonesia" target="_blank" rel="noopener noreferrer" class="!text-white hover:!text-gray-200 transition-colors" style="color: white !important;">
+            <span class="sr-only">Medium</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.412l4.958 10.89 4.359-10.89h6.224v.403l-1.917 1.837c-.165.126-.247.333-.213.538v13.5c-.034.204.048.411.213.537l1.87 1.837v.403h-9.41v-.403l1.937-1.882c.19-.19.19-.246.19-.538v-10.91l-5.39 13.688h-.727l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-3.58v-.404l2.52-3.058c.27-.279.39-.669.346-1.052v-9.75z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="mt-2">
+        <h3 class="font-semibold text-lg mb-4 !text-white" style="color: white !important;">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="/" class="!text-white hover:!text-gray-200 transition-colors text-sm" style="color: white !important;">Home</a></li>
+          <li><a href="/about" class="!text-white hover:!text-gray-200 transition-colors text-sm" style="color: white !important;">About</a></li>
+          <li><a href="/events" class="!text-white hover:!text-gray-200 transition-colors text-sm" style="color: white !important;">Events</a></li>
+          <li><a href="/articles" class="!text-white hover:!text-gray-200 transition-colors text-sm" style="color: white !important;">Articles</a></li>
+          <li><a href="/contact" class="!text-white hover:!text-gray-200 transition-colors text-sm" style="color: white !important;">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="mt-2">
+        <h3 class="font-semibold text-lg mb-4 !text-white" style="color: white !important;">Contact Us</h3>
+        <ul class="space-y-2">
+          <li class="flex items-center space-x-2">
+            <svg class="w-5 h-5 !text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: white !important;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <a href="mailto:data.engineering.id@gmail.com" class="!text-white hover:!text-gray-200 transition-colors text-sm" style="color: white !important;">
+              data.engineering.id@gmail.com
+            </a>
+          </li>
+          <li class="flex items-center space-x-2">
+            <svg class="w-5 h-5 !text-white" fill="currentColor" viewBox="0 0 24 24" style="color: white !important;">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            <a href="https://www.linkedin.com/company/74711316/" target="_blank" rel="noopener noreferrer" class="!text-white hover:!text-gray-200 transition-colors text-sm" style="color: white !important;">
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/30 mt-8 pt-8 text-center">
+      <p class="!text-white text-sm mb-1" style="color: white !important;">
+        © {currentYear} Data Engineering Indonesia. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>

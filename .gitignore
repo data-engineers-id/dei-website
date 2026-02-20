@@ -1,3 +1,5 @@
+.vscode
+
 # build output
 dist/
 # generated types
@@ -22,3 +24,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# AI related folders
+AGENTS*.md
+PLANS.md
+DEPLOYMENT_*.md
+.opencode
