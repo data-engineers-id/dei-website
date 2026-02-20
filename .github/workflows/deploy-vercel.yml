@@ -3,6 +3,8 @@ name: Deploy to Vercel
 on:
   push:
     branches: [main, master]
+  schedule:
+    - cron: '0 * * * *'
 
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
