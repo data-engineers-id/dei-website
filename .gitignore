@@ -1,4 +1,6 @@
 .vscode
+.opencode/*
+!.opencode/agents
 
 # build output
 dist/
@@ -26,8 +28,7 @@ pnpm-debug.log*
 .idea/
 
 # AI related folders
-AGENTS*.md
+AGENTS_*.md
 PLANS.md
 DEPLOYMENT_*.md
-.opencode
 LESSONS.md
